@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BankingApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="421" Width="583">
+    <Grid Margin="0,0,10,0">
         <Button Content="Log In" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="43" Width="138"/>
-        
+
     </Grid>
     <!-- This is a test comment to see if this will actually work -->
 </Window>
