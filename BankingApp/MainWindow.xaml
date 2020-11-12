@@ -8,6 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button Content="Log In" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="43" Width="138"/>
-
+        
     </Grid>
+    <!-- This is a test comment to see if this will actually work -->
 </Window>
