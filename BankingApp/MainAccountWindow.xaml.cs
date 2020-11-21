@@ -26,5 +26,35 @@ namespace BankingApp
         {
 
         }
+
+        private void btnMakeDeposit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnMakeWithdrawl_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnTransferFunds_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnMakePurchase_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnViewTransactionHistory_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnLogout_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }
