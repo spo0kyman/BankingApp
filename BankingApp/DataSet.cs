@@ -1,0 +1,7 @@
+﻿namespace BankingApp
+{
+}
+
+namespace BankingApp
+{
+}
