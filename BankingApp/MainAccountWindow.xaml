@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainAccountWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="txtWelcomeText" Margin="38,28,598,370" Text="Welcome [name]!" TextWrapping="Wrap" FontSize="20" FontFamily="Bahnschrift SemiBold"/>
+        <TextBox x:Name="txtWelcomeText" Margin="10,28,578,339" Text="Welcome [name]!" TextWrapping="Wrap" FontSize="20" FontFamily="Bahnschrift SemiBold"/>
         <TextBox x:Name="txtCheckingBalanceBox" HorizontalAlignment="Left" Margin="227,16,0,0" Text="Checking Balance:" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" Height="30" FontSize="24" TextChanged="TextBox_TextChanged" FontFamily="Bahnschrift SemiBold"/>
         <TextBox x:Name="txtSavingsBalanceBox" HorizontalAlignment="Left" Margin="252,64,0,0" Text="Savings Balance:" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" FontSize="24" FontFamily="Bahnschrift SemiBold"/>
         <TextBox x:Name="txtCheckingBalanceAmount" HorizontalAlignment="Left" Margin="463,20,0,0" Text="$1000.00" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="26" FontSize="22" FontFamily="Bahnschrift Light"/>

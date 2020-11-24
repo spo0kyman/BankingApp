@@ -54,7 +54,9 @@ namespace BankingApp
 
         private void btnLogout_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            MainWindow main = new MainWindow();
+            main.Show();
+            this.Close();
         }
     }
 }

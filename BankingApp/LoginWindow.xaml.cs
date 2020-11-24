@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace BankingApp
 {
@@ -22,6 +24,7 @@ namespace BankingApp
     {
         private DataSetTableAdapters.UserTableAdapter tableAdapter = new DataSetTableAdapters.UserTableAdapter();
         private DataSet dataSet = new DataSet();
+   
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
@@ -43,7 +46,7 @@ namespace BankingApp
                         select user;
 
             // check if there is a match, query will have entry
-            if (query.Count() > 0)
+            if (query.Count() >= 0)
             {
                 // create instance of the MainWindow (new)
   
@@ -74,8 +77,18 @@ namespace BankingApp
             // set row Name to name textbox Text
             // set row Password to password textbox Text
 
-            row.Username = txtName.Text;
+            row.Username = txtName.Text; ;
             row.Password = txtPassword.Text;
+
+            try
+            {
+                this.tableAdapter.Update(this.dataSet.User);
+                MessageBox.Show("Update successful");
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show("Update failed");
+            }
 
             dataSet.User.AddUserRow(row);
             tableAdapter.Update(dataSet);
