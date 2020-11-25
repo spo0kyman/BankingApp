@@ -80,16 +80,8 @@ namespace BankingApp
             row.Username = txtName.Text; ;
             row.Password = txtPassword.Text;
 
-            try
-            {
-                this.tableAdapter.Update(this.dataSet.User);
-                MessageBox.Show("Update successful");
-            }
-            catch (System.Exception ex)
-            {
-                MessageBox.Show("Update failed");
-            }
-
+            this.tableAdapter.Update(this.dataSet.User);
+         
             dataSet.User.AddUserRow(row);
             tableAdapter.Update(dataSet);
 
