@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
 namespace BankingApp
 {
     /// <summary>
@@ -29,7 +30,9 @@ namespace BankingApp
 
         private void btnMakeDeposit_Click(object sender, RoutedEventArgs e)
         {
-
+            MakeDepositWindow makeDepositWindow = new MakeDepositWindow();
+            makeDepositWindow.Show();
+            
         }
 
         private void btnMakeWithdrawl_Click(object sender, RoutedEventArgs e)
@@ -44,7 +47,8 @@ namespace BankingApp
 
         private void btnMakePurchase_Click(object sender, RoutedEventArgs e)
         {
-
+            MakePurchaseWindow makePurchaseWindow = new MakePurchaseWindow();
+            makePurchaseWindow.Show();
         }
 
         private void btnViewTransactionHistory_Click(object sender, RoutedEventArgs e)

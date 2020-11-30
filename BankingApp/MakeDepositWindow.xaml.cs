@@ -17,6 +17,7 @@ namespace BankingApp
     /// </summary>
     public partial class MakeDepositWindow : Window
     {
+        public int number { get; set; }
         public MakeDepositWindow()
         {
             InitializeComponent();
@@ -24,6 +25,18 @@ namespace BankingApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            number = int.Parse(amountDeposit.Text);
+
+            MainAccountWindow mainAccountWindow = new MainAccountWindow();
+
+            if (btnSavingsAccount.IsEnabled)
+            {
+                mainAccountWindow.txtSavingsBalanceAmount.Text += number.ToString();
+            }
+            else
+            {
+                mainAccountWindow.txtCheckingBalanceAmount.Text += number.ToString();
+            }
 
         }
     }
