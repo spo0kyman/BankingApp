@@ -24,7 +24,10 @@ namespace BankingApp
     {
         private DataSetTableAdapters.UserTableAdapter tableAdapter = new DataSetTableAdapters.UserTableAdapter();
         private DataSet dataSet = new DataSet();
-   
+        public MainAccountWindow mainAccountWindow = new MainAccountWindow();
+
+        public delegate void AddressUpdateHandler();
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
@@ -50,7 +53,7 @@ namespace BankingApp
             {
                 // create instance of the MainWindow (new)
   
-                MainAccountWindow mainAccountWindow = new MainAccountWindow();
+               
                 // show window
                 mainAccountWindow.Show();
                 // Close() this window
